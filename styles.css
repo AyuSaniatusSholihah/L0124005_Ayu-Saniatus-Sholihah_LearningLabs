@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #eaf4f4; /* Warna teks yang lebih cerah untuk kontras */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('path-to-your-image.jpg'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(38, 70, 83, 0.8); /* Warna biru gelap dengan transparansi untuk latar header */
+    color: #98d5e2; /* Warna teks header yang lebih terang */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em; /* Ukuran lebih besar untuk penekanan */
+    color: #eaf4f4; /* Warna teks utama yang lebih cerah */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    color: #f4a261; /* Warna navigasi yang cerah untuk kontras */
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: color 0.3s ease; /* Animasi perubahan warna saat hover */
+}
+
+nav a:hover {
+    color: #ffddc1; /* Warna saat tautan di-hover */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(42, 157, 143, 0.7); /* Latar belakang konten dengan warna hijau gelap transparan */
+    color: #ffffff; /* Warna teks yang lebih kontras */
+    border-radius: 10px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Membuat gambar lebih halus */
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #2a9d8f; /* Border hijau tua untuk keselarasan */
+    background-color: rgba(38, 70, 83, 0.6); /* Warna hijau-biru gelap yang serasi untuk artikel */
+    border-radius: 10px;
+}
+
+h2, p {
+    color: #f4f4f9; /* Warna teks di dalam konten yang kontras */
+}
+
+footer {
+    background-color: rgba(38, 70, 83, 0.8); /* Warna latar footer sama dengan header */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+footer p {
+    color: #eaf4f4; /* Warna teks di footer yang lebih cerah */
+}
+
+/* Media Queries untuk Mobile */
+@media (max-width: 600px) {
+    header {
+        align-items: flex-start;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        width: 100%;
